@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    background-color: brown;
+    font-size: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav a li {
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar a {
+    color: orange;
+    font-size: 25px;
+}
+
+.nav li:hover {
+    background-color: rgba(0, 0, 255, 0.712);
+    border-radius: 10px;
+    border: 1px;
+}
+
+.bg img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.bg .h {
+    position: relative;
+    top: -600px;
+    color: rgb(255, 255, 255);
+    max-width: 1200px;
+    left: 250px;
+    right: 0;
+    margin: auto;
+    font-size: 25px;
+}
+
+.btn a button {
+    border-radius: 5px;
+    background-color: rgb(27, 92, 212);
+    font-size: 20px;
+    border: none;
+    padding: 15px;
+    margin: 5px;
+    color: white;
+    text-align: center;
+}
+
+.h a .btn1 {
+    background-color: rgba(255, 255, 255, 0.733);
+    color: blue;
+}
+
+.btm {
+    background-color: rgba(226, 221, 221, 0.925);
+    margin-top: -240px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    align-items: top;
+    gap: 200px;
+}
+
+.btm .img1 {
+    width: 700px;
+    height: 700px;
+}
+
+.btm img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.style .navbar2 li {
+    display: inline-flex;
+    padding: 10px 20px 10px 0px;
+    align-items: center;
+}
+
+.style .navbar2 li button {
+    padding: 15px 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+}
+
+.style {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.style h3 {
+    font-size: 20px;
+}
+
+.style .nb {
+    color: blue;
+}
+
+.style .nb1 {
+    color: blue;
+}
+
+.style .navbar2 li button:hover {
+    background-color: navy;
+    color: white;
+    width: 200px;
+    height: 50px;
+}
+
+.style .dl button {
+    align-items: center;
+    display: flex;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: navy;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.style .navbar2 li .tp {
+    background-color: navy;
+    color: rgba(255, 255, 255, 0.685);
+}
+
+.sv {
+    display: flex;
+    margin: 50px 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.st {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    width: 90%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.st .box {
+    width: 100px;
+    height: 100px;
+    background-color: navy;
+    font-size: 50px;
+    border-radius: 200px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.st .ky {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(10, 10, 10, 0.384);
+    margin: 10px 50px;
+    border-radius: 15px;
+    border: 0px solid;
+    padding: 70px 70px;
+}
+
+.st .ky span {
+    font-size: 30px;
+}
+
+.btm img {
+    border-radius: 50px;
+}
+
+.bt5 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+.bt4 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.bg5 {
+    background-color: rgba(231, 228, 228, 0.973);
+    padding: 20px 0px;
+}
+
+.bt7 {
+    background-color: rgba(255, 253, 253, 0.966);
+    padding: 30px 30px;
+    box-shadow: 0px 10px 10px rgba(138, 137, 137, 0.685);
+}
+
+.bt7 img {
+    border-radius: 10px;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(10px);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.bt7 img:hover {
+    animation: shake 1s infinite;
+}
+
+.bt7 h1 {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+
+.bt7 button {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    background-color: blue;
+    font-size: 20px;
+    color: orange;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.bt7 button:hover {
+    background-color: white;
+    color: black;
+}
+
+.bt4 h1 {
+    font-size: 30px;
+}
+
+.pl {
+    display: grid;
+    border: 1px solid black;
+    place-items: center;
+}
+
+.pl h1 {
+    font-size: 30px;
+    margin: 20px 10px;
+}
+
+.pl .pl1 {
+    display: flex;
+    padding: 20px 0px;
+    width: 60%;
+    gap: 10px;
+}
+
+.pl .pl1 input {
+    padding: 15px 10px;
+    width: 50%;
+}
+
+.pl2 {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.pl2 input {
+    width: 100%;
+    padding: 15px 10px;
+}
+
+.pl3 {
+    width: 60%;
+}
+
+.pl3 textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+.btn6 {
+    padding: 10px 30px;
+    margin-top: 10px;
+    background: blue;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 100px;
+    border-radius: 5px;
+}
+
+.sv h1 {
+    font-size: 30px;
+}
+
+.lg {
+    font-size: 13px;
+}
+
+.gb2 {
+    background-color: rgba(231, 228, 228, 0.973);
+    display: grid;
+    place-items: center;
+    height: 25vh;
+}
+
+.gb2 h4 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 20px;
+}
+
+.gb3 a {
+    padding: 30px;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.gb3 a:hover {
+    color: blue;
+    background-color: rgba(190, 187, 187, 0.973);
+}
+
+.gb4 {
+    background-color: rgba(231, 228, 228, 0.973);
+    height: 10vh;
+}
+
+.gb4 h5 {
+    display: grid;
+    place-items: center;
+    padding-top: 10px;
+}
