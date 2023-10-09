@@ -18,3 +18,9 @@ $('.mk').click(function() {
     $('.sk1').hide()
     $('.sk2').show()
 })
+
+$('.toggler').click(function() {
+    $('.navbar').toggleClass("active");
+
+
+});

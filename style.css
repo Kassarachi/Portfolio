@@ -56,10 +56,14 @@ body {
     top: -600px;
     color: rgb(255, 255, 255);
     max-width: 1200px;
-    left: 250px;
-    right: 0;
+    /* left: 250px;
+    right: 0; */
     margin: auto;
     font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn a button {
@@ -82,16 +86,18 @@ body {
     background-color: rgba(226, 221, 221, 0.925);
     margin-top: -240px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 30% 70%;
     padding: 30px 20px;
     align-items: top;
     gap: 200px;
 }
 
 .btm .img1 {
-    width: 700px;
-    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
 }
 
 .btm img {
@@ -128,10 +134,12 @@ body {
 
 .style .nb {
     color: blue;
+    margin-top: 10px;
 }
 
 .style .nb1 {
     color: blue;
+    margin-top: 10px;
 }
 
 .style .navbar2 li button:hover {
@@ -384,4 +392,125 @@ body {
 #Portfolio,
 #contact {
     padding: 70px 0px;
+}
+
+.sk img {
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width:1282px) {
+    .btm {
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+    .sk1 {
+        max-width: 600px;
+    }
+}
+
+@media only screen and (max-width:1009px) {
+    .btm {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+    .sk1 {
+        max-width: 400px;
+        /* margin: auto; */
+    }
+    .navbar2 li {
+        display: flex !important;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width:1077px) {
+    .st {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        width: 90%;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .bt5 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+}
+
+@media only screen and (max-width:855px) {
+    .st {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        width: 90%;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .bt5 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+}
+
+@media only screen and (max-width:875px) {
+    .btm {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .btm .img1 {
+        max-width: 90% !important;
+        margin: auto;
+    }
+    .sk1 {
+        max-width: 400px;
+        /* margin: auto; */
+    }
+}
+
+@media only screen and (max-width:673px) {
+    .style {
+        display: block !important;
+        max-width: 1000px;
+        margin: auto !important;
+        font-size: 20px;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:873px) {
+    .navbar {
+        display: block;
+        padding: 10px 20px;
+        height: 70px;
+        transition: 0.3s;
+        overflow: hidden;
+    }
+    .navbar .nav {
+        display: block !important;
+        padding-top: 20px;
+    }
+    .active {
+        height: 300px;
+    }
+    .toggler {
+        display: initial !important;
+    }
+}
+
+.toggler {
+    display: none;
+    float: right;
+    margin: 20px;
+}
+
+.toggler div {
+    height: 3px;
+    width: 33px;
+    background: white;
+    margin: 4px;
 }
