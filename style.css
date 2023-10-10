@@ -385,6 +385,7 @@ body {
     display: grid;
     place-items: center;
     padding-top: 10px;
+    font-size: 18px;
 }
 
 #About,
@@ -422,6 +423,7 @@ body {
     .navbar2 li {
         display: flex !important;
         flex-wrap: wrap;
+        padding-bottom: 10px;
     }
 }
 
