@@ -423,7 +423,6 @@ body {
     .navbar2 li {
         display: flex !important;
         flex-wrap: wrap;
-        padding-bottom: 10px;
     }
 }
 
@@ -487,17 +486,21 @@ body {
 @media only screen and (max-width:873px) {
     .navbar {
         display: block;
-        padding: 10px 20px;
+        padding: 20px 20px !important;
         height: 70px;
         transition: 0.3s;
         overflow: hidden;
     }
+    .logo {
+        padding-left: 40px;
+    }
     .navbar .nav {
         display: block !important;
         padding-top: 20px;
+        padding-left: 25px;
     }
     .active {
-        height: 300px;
+        height: 400px;
     }
     .toggler {
         display: initial !important;
@@ -507,7 +510,6 @@ body {
 .toggler {
     display: none;
     float: right;
-    margin: 20px;
 }
 
 .toggler div {
